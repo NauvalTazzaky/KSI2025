@@ -2,8 +2,8 @@
 // Konfigurasi Database (Ganti sesuai setting Anda)
 $server = "localhost";
 $username = "root";
-$password = "your_password"; // Ganti dengan password database Anda
-$database = "aplikasi_data"; // Ganti dengan nama database Anda
+$password = "your_password"; // Pastikan Anda mengisi password yang benar
+$database = "aplikasi_data"; // Pastikan nama database sudah benar
 
 // Melakukan koneksi
 $koneksi = mysqli_connect($server, $username, $password, $database);
@@ -12,7 +12,5 @@ $koneksi = mysqli_connect($server, $username, $password, $database);
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-
-// Opsional: pesan sukses
-// echo "Koneksi database berhasil!";
+// Jika koneksi berhasil, tidak ada output yang ditampilkan (clean code)
 ?>
