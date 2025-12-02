@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit ...>
+    <testsuites>
+        <testsuite name="Aplikasi KSI2025 Tests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    
+    <php>
+        <env name="DB_HOST" value="${TEST_DB_HOST}"/>
+        <env name="DB_NAME" value="${TEST_DB_NAME}"/>
+        <env name="DB_USER" value="${TEST_DB_USER}"/>
+        <env name="DB_PASS" value="${TEST_DB_PASS}"/>
+    </php>
+
+</phpunit>
